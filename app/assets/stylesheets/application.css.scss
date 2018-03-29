@@ -17,40 +17,42 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-
+//Typography Styles
 h1,h2,h3 {
     font-family: 'IBM Plex Serif', serif;
 }
+
 html{
     min-height: 100%;
 }
+//background Gradients
 .home-callout , .navbar{
     //credit to UI Gradient generator @i_ghosh at uiGradient.com
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+//nav styles
 .navbar{
     border:none;
 }
+//homepage styles
 .home-callout{
     color: white;
     margin-top:-20px;
     padding-top:50px;
     padding-bottom:100px;
 }
-.navbar-default .navbar-brand{
+//Overriding the bootstrap colours 
+//always find the strong specifity  (use inspect element)
+
+//nav items colour and when it's hovering
+.navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{
     color:white;
+    &:hover{
+        color:white;
+        opacity:0.75;
+    }
 }
-.navbar-default .navbar-brand:hover{
-    color:white;
-    opacity:0.75;
-}
-//always find the strong specification (use inspect element)
-.navbar-default .navbar-nav > li > a{
-    color:white;
-}
-.navbar-default .navbar-nav > li > a:hover{
-    color:white;
-    opacity:0.75;
-}
+
