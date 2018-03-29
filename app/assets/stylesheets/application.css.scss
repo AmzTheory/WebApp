@@ -35,6 +35,15 @@ html{
     background: linear-gradient(to top, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+    background:white;
+}
+.navbar-default .navbar-toggle{
+    border:2px solid white;
+    &:hover,&:focus{
+        background-color:#00c6ff; 
+    }
+}
 //nav styles
 .navbar{
     border:none;
@@ -61,4 +70,5 @@ html{
     font-family:"IBM Plex Serifs",Sans-serif;
     font-weight:800;
 }
+
 
