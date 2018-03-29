@@ -1,1 +1,32 @@
-<h1 class="text-center">Contact Form</h1>
+<div class="container">
+    <h1 class="text-center">Contact Form</h1>
+    
+    <!--<form action="">-->
+    <!--    <label>Name</label>-->
+    <!--    <input type="text">-->
+    <!--    <br/>-->
+        
+    <!--    <label>Email</label>-->
+    <!--    <input type="text">-->
+    <!--    <br/>-->
+        
+    <!--    <label>Comments</label>-->
+    <!--    <input type="text">-->
+    <!--    </br>-->
+        
+    <!--    <input type=submit>-->
+    <!--</form>-->
+    <%= form_for "/contacts" do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    
+    <%= f.label :comment %>
+    <%= f.text_area :comment %>
+    
+    <% f.submit 'Submit' %>
+    <% end %>
+</div
